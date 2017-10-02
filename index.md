@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## Welcome to Attendy!
 
-You can use the [editor on GitHub](https://github.com/ieor171/attendy7/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Hi! Welcome to Attendy! Each week students will scan a QR code, which contains a weekly secret password.
+What do you want the password to be this week? 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+To make the QR code use this link and change KEEP-YOUR-CODE-HERE to the new password.
 
-### Markdown
+https://chart.googleapis.com/chart?cht=qr&chl=MATMSG%3ATO%3Aieor171.berkeley%40gmail.com%3BSUB%3A%3BBODY%3A KEEP-YOUR-CODE-HERE %3B%3B&chs=180x180&choe=UTF-8&chld=L|2
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+For example, if I wanted to make the password WEEK7 I would write:
 
-```markdown
-Syntax highlighted code block
+https://chart.googleapis.com/chart?cht=qr&chl=MATMSG%3ATO%3Aieor171.berkeley%40gmail.com%3BSUB%3A%3BBODY%3AWEEK7%3B%3B&chs=180x180&choe=UTF-8&chld=L|2
 
-# Header 1
-## Header 2
-### Header 3
+This is what the code looks like: 
 
-- Bulleted
-- List
+<img src="https://chart.googleapis.com/chart?cht=qr&chl=MATMSG%3ATO%3Aieor171.berkeley%40gmail.com%3BSUB%3A%3BBODY%3AWEEK7%3B%3B&chs=180x180&choe=UTF-8&chld=L|2" 
+rel='nofollow' alt='qr code' align="middle"><a href='http://www.qrcode-generator.de' border='0' style='cursor:default'  rel='nofollow'></a>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ieor171/attendy7/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Finally, this spreadsheet automatically tracks all attendance: <a href='https://docs.google.com/spreadsheets/d/11_kqC3xLnkT3evQBfSx_L7TmtgzeszhXTkMx8hyZRxg/edit?usp=sharing'>Attendance</a><br>
