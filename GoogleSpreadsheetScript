@@ -1,0 +1,34 @@
+var SEARCH_QUERY = "label:inbox is:unread to:me from:berkeley.edu";
+ 
+// Credit: https://gist.github.com/oshliaer/70e04a67f1f5fd96a708
+
+function getEmails_(q) {
+    var emails = [];
+  
+    var threads = GmailApp.search(q);
+    for (var i in threads) {
+        var msgs = threads[i].getMessages();
+        for (var j in msgs) {
+            emails.push([threads[i].getFirstMessageSubject(),
+                         threads[i].getLastMessageDate(),
+                         msgs[j].getBody().replace(/<.*?>/g, '\n')
+                .replace(/^\s*\n/gm, '').replace(/^\s*/gm, '').replace(/\s*\n/gm, '\n')   
+            ]);  
+        }
+        threads[i].markRead();
+    }
+    return emails;
+}
+
+function saveEmails() {
+    var array2d = getEmails_(SEARCH_QUERY);
+    if (array2d) {
+        appendData_(SpreadsheetApp.getActiveSheet(), array2d);
+    }
+}
+
+function appendData_(sheet, array2d) {
+  if (array2d.length > 0) {
+      sheet.getRange(sheet.getLastRow() + 1, 1, array2d.length, array2d[0].length).setValues(array2d);
+  }
+}
