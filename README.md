@@ -1,16 +1,21 @@
-# attendy7
-Hacked an attendance taker for Tech Firm Leadership class :] 
+# Attendance Tracker
+
+This program was written for a technology entrepreneurship class, and placed second out of 5-6 teams.
+
+## Dependencies
+
+- JavaScript
+- Google Workspace API
+
+## User Flow
 
 1. Students download any QR Scanner app.
-2. Owner creates a QR code.
-   a. Code prompts sending email with secret password as title.
-   b. Students write in name as message. 
-3. Google Script automatically reads emails in inbox and timestamps attendance. 
+2. Teacher generates a QR code by using link to set a custom password.
+   a. Email is sent with password as title to each student on roster.
+   b. Students email name as message. 
+3. Class-specific gmail inbox has script that monitors emails in inbox and writes student name and timestamp to Google Sheet.
 
+## Potential Improvements
 
-Things could add:
-Sending back confirmation email to students.
-Cleaning spreadsheet so keeps running total of attendance.
-Making github pg spiffier with form submission so generates QR code in site.
-
-Overall quick&easy and difficult for students to game.
+- Sending back confirmation email to students
+- Adding metrics like running total of attendance per student
