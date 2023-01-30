@@ -1,6 +1,6 @@
 # Attendance Tracker
 
-This program was written for a technology entrepreneurship class, and placed second out of 5-6 teams.
+This program was written for a technology entrepreneurship class, and placed second out of 5-6 teams in a 2 week class-wide contest.
 
 ## Dependencies
 
